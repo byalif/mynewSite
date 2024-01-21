@@ -1,16 +1,14 @@
-FROM node:alpine as build
-WORKDIR '/src'
-
-COPY ./package.json ./
-
-RUN npm install 
+FROM node:14 AS builder
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci
 COPY . .
-
 RUN npm run build
 
-
-FROM nginx:alpine
+# Stage 2: Set up the Nginx server
+FROM nginx:stable-alpine
 COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /src/build /usr/share/nginx/html
+COPY --from=builder /app/.next /usr/share/nginx/html
+COPY --from=builder /app/public /usr/share/nginx/html/_next/static
+# COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 3000
-CMD ["nginx", "-g", "daemon off;"]
