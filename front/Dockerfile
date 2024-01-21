@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 COPY . .
-RUN npm run build
+RUN npm run-script build
 
 # Stage 2: Set up the Nginx server
 FROM nginx:stable-alpine
