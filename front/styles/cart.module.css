@@ -1,0 +1,207 @@
+/* .cart{
+        cursor: pointer;
+            z-index: 2;
+            position: absolute;
+            color: rgb(233, 233, 233);
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            padding: 10px;
+            top: 149px;
+            margin-right: 20px;
+            background-color: rgb(59, 59, 59);
+            border-radius: 8px;
+} */
+/* Loading css end */
+
+
+
+/* cart css */
+.cartCont {
+    transition: 200ms ease;
+    position: absolute;
+    right: 6px;
+    top: 48px;
+    color: white;
+    font-size: 20px;
+    padding: 25px;
+    z-index: 1;
+    max-height: 532px;
+    /* height: 200px; */
+    width: 340px;
+    border: .5px solid rgb(35, 35, 35);
+    overflow: scroll;
+    background-color: rgb(59, 59, 59);
+        border-radius: 7px;
+}
+
+
+
+.cartContHide{
+        transition: 200ms ease;
+        opacity: 0;
+        animation: animate 200ms forwards;
+        top: 35px;
+        position: absolute;
+        right: 6px;
+        z-index: 1;
+        color: white;
+        font-size: 20px;
+        padding: 25px;
+        max-height: 532px;
+        /* height: 200px; */
+        width: 340px;
+        border: .5px solid rgb(35, 35, 35);
+        overflow: scroll;
+        background-color: rgb(59, 59, 59);
+        border-radius: 7px;
+}
+
+
+
+@keyframes animate {
+    0% {
+        z-index: 1;
+    }
+
+    99% {
+        z-index: 1;
+    }
+
+    100% {
+        z-index: -2;
+    }
+}
+
+
+.contB{
+    overflow: hidden;
+    background-color: aqua;
+}
+
+.cartCont::-webkit-scrollbar,.cartContHide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.cartCont, .cartContHide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.leftSide{
+    align-items: center;
+    display: flex;
+    margin: 10px 0;
+}
+
+.rightSide{
+    margin-top: 14px;
+    font-size: 14px
+}
+
+.btn{
+    margin: 8px 0;
+    width: 100%;
+    border: none;
+    font-weight: 400;
+    color: rgb(21, 21, 21);
+    border-radius: 4px;
+    border: 1px solid rgb(72, 72, 72);
+    padding: 4px;
+    background-color: rgb(159, 173, 195);
+}
+
+
+
+.btnDisable{
+        pointer-events: auto ! important;
+            cursor: not-allowed ! important;
+        margin: 8px 0;
+            width: 100%;
+            border: none;
+            font-weight: 400;
+            color: rgb(21, 21, 21);
+            border-radius: 4px;
+            border: 1px solid rgb(72, 72, 72);
+            padding: 4px;
+            background-color: rgb(159, 173, 195);
+}
+
+.ttle{
+    font-size: 21px;
+    font-weight: 400;
+    position: sticky;
+    top: -5%;
+    padding-top:20px;
+        background-color: rgb(59, 59, 59);
+        /* padding: ; */
+}
+
+
+
+
+
+.toggleA {
+    animation: wiggle 2.5s infinite;
+    transition: 200ms ease;
+}
+
+.toggleB {
+    animation: wiggle2 2.5s infinite;
+}
+
+
+@keyframes wiggle2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(5deg);
+    }
+
+    95% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(5deg);
+    }
+
+    95% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Wjps2018",
+    "database": "mySiteDB",
+    "host": "mysitedb.cbcga8mua8q3.us-east-2.rds.amazonaws.com",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Wjps2018",
+    "database": "mySiteDB",
+    "host": "mysitedb.cbcga8mua8q3.us-east-2.rds.amazonaws.com",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "Wjps2018",
+    "database": "mySiteDB",
+    "host": "mysitedb.cbcga8mua8q3.us-east-2.rds.amazonaws.com",
+    "dialect": "mysql"
+  }
+}

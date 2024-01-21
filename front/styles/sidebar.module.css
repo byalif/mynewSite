@@ -1,0 +1,52 @@
+        .shownav {
+                z-index: 100;
+                    position: fixed;
+                    background-color: rgb(168, 188, 188);
+                    left: 0%;
+                    top: 0%;
+                    padding: 40px;
+                    height: 100%;
+                    width: 100%;
+                    transition: 200ms ease;
+                    opacity: 1;
+                    overflow: scroll;
+                    
+        }
+    
+        .hidenav {
+            opacity: 0;
+            z-index: 100;
+                position: fixed;
+            background-color: rgb(168, 188, 188);
+                left: 100%;
+                top: 0%;
+                padding: 40px;
+                height: 100%;
+                width: 100%;
+                transition: 200ms ease;
+        }
+
+        .leftside{
+      
+            margin-top: 65px;
+        }
+
+        .leftside li{
+            padding: 0;
+            margin: 30px 0px;
+            width: 100%;
+            background-color: rgb(85, 105, 105);
+        }
+
+        .leftside li a{
+            text-decoration: none;
+            color: rgb(239, 239, 239);
+            align-items: center;
+        }
+
+        .cart{
+                text-decoration: none;
+                margin-left: 5px;
+                    color: rgb(239, 239, 239);
+                    align-items: center;
+        }

@@ -1,0 +1,216 @@
+.container{
+}
+
+.cont{
+    max-width: 1300px;
+    display: flex;  
+    margin: auto;
+}
+
+.topLeft{
+    height: 100%;
+    text-align: center;
+    margin: 30px;
+    margin-top: 20px;
+    padding: 30px;
+        border-radius: 8px;
+    /* width: 30%; */
+    border: .1px solid rgb(207, 207, 207);
+        background-color: rgb(200, 207, 206);
+}
+
+.topRight{
+    margin: 30px;
+        border-radius: 8px;
+    padding: 30px;
+    width: 70%;
+        margin-top: 0;
+
+}
+
+.topRight .low{
+    display: grid;
+        gap: 7px;
+        row-gap: 30px;
+        padding-left: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(226px, 1fr));
+        grid-template-rows: repeat(0, 280px);
+            place-items: center;
+}
+
+.high {
+    text-align: center;
+    padding: 20px;
+    padding-top: 0;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.files{
+text-align: center;
+}
+
+.topLeft button{
+    cursor: pointer;
+    margin: 10px 0px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    padding: 7px;
+    background-color: rgb(121, 127, 129);
+    width: 100%;
+    font-weight: 300;
+}
+
+
+.topLeft button:focus{
+    outline: none;
+}
+
+.topLeft2{
+    display: none;
+}
+
+@media all and (max-width: 658px){
+    .container {}
+    
+        .cont {
+            max-width: 1300px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+    
+        .topLeft {
+            display: none;
+            width: 50%;
+            height: 100%;
+            text-align: center;
+            margin: 30px;
+            margin: auto;
+            min-width: 300px;
+            margin-top: 20px;
+            padding: 30px;
+            border-radius: 8px;
+            /* width: 30%; */
+            border: .1px solid rgb(207, 207, 207);
+            background-color: rgb(200, 207, 206);
+        }
+    
+        .topRight {
+            margin: auto;
+            border-radius: 8px;
+            padding: 30px;
+            width: 70%;
+            margin-top: 0;
+    
+        }
+    
+        .topRight .low {
+            display: grid;
+            gap: 7px;
+            row-gap: 30px;
+            padding-left: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(226px, 1fr));
+            grid-template-rows: repeat(0, 280px);
+            place-items: center;
+        }
+    
+        .high {
+            text-align: center;
+            padding: 20px;
+            padding-top: 0;
+            font-size: 19px;
+            font-weight: 300;
+        }
+    
+        .files {
+            text-align: center;
+        }
+    
+        .topLeft button {
+            cursor: pointer;
+            margin: 10px 0px;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 4px;
+            padding: 7px;
+            background-color: rgb(121, 127, 129);
+            width: 100%;
+            font-weight: 300;
+        }
+    
+    
+        .topLeft button:focus {
+            outline: none;
+        }
+
+        .topLeft2{
+            display: flex;
+            align-items: center;
+                        width: 100%;
+                        z-index: 9;
+                            text-align: center;
+                            margin: 30px;
+                            margin: auto;
+                            min-width: 300px;
+                            margin-top: 20px;
+                            padding: 30px;
+                        backdrop-filter: blur(50px);
+                        box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+            position: fixed;
+            bottom: 0;
+
+        }
+
+
+                        .topRight {
+                            margin: auto;
+                            border-radius: 8px;
+                            padding: 30px;
+                            width: 70%;
+                            margin-top: 0;
+                   
+                        }
+            
+                        .topRight .low {
+                            display: grid;
+                            gap: 7px;
+                            row-gap: 30px;
+                            padding-left: 20px;
+                            grid-template-columns: repeat(auto-fill, minmax(226px, 1fr));
+                            grid-template-rows: repeat(0, 280px);
+                            place-items: center;
+                                    margin-bottom: 270px;
+                        }
+            
+                        .high {
+                            text-align: center;
+                            padding: 20px;
+                            padding-top: 0;
+                            font-size: 19px;
+                            font-weight: 300;
+                        }
+            
+                        .files {
+                            font-size: 15px;
+                            text-align: center;
+                        }
+            
+                        .topLeft2 button {
+                            cursor: pointer;
+                            margin: 10px 0px;
+                            color: rgb(255, 255, 255);
+                            border: none;
+                            border-radius: 4px;
+                            padding: 7px;
+                            background-color: rgb(65, 65, 65);
+                            width: 100%;
+                            font-weight: 300;
+                        }
+            
+            
+                        .topLeft2 button:focus {
+                            outline: none;
+                        }
+}

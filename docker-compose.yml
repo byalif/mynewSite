@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  nginx:
+    restart: always
+    image: beatsbyalif/mysite-nginx
+    ports:
+      - 80:80
+  front:
+    container_name: front
+    hostname: front
+    image: beatsbyalif/mysite-front
+    ports:
+      - 3000:3000
+  api:
+    container_name: api
+    hostname: api
+    image: beatsbyalif/mysite-server
+    restart: on-failure
+    ports:
+      - 8000:8000
+    stdin_open: true
+    tty: true

@@ -1,0 +1,33 @@
+{
+  "name": "next-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@netlify/plugin-nextjs": "^4.23.1",
+    "axios": "^0.27.2",
+    "babel-plugin-macros": "^3.1.0",
+    "form-data": "^4.0.0",
+    "formik": "^2.2.9",
+    "js-cookie": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "next": "^12.2.2",
+    "nextjs-progressbar": "^0.0.14",
+    "nprogress": "^0.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
+    "yup": "^0.32.11"
+  }
+}
